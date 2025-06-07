@@ -9,7 +9,7 @@
       min-height: 100vh;
     }
     .bogo-container {
-      width: 340px;
+      width: 380px;
       background: #fff;
       border-radius: 8px;
       box-shadow: 0 2px 12px rgba(0,0,0,0.07);
@@ -26,15 +26,14 @@
       letter-spacing: 0.5px;
     }
     .offer-box {
-      border: 1.5px solid #eee;
-      border-radius: 8px;
+      border: 1.5px solid rgb(184, 183, 183);
       padding: 16px 14px;
       margin-bottom: 16px;
       display: flex;
       align-items: flex-start;
       position: relative;
       background: #fff;
-      transition: border 0.2s;
+
     }
     .offer-box.selected {
       border: 2px solid #ff7ca8;
@@ -54,8 +53,8 @@
       margin-bottom: 4px;
     }
     .offer-units {
-      font-size: 17px;
-      font-weight: 500;
+      font-size: 16px;
+      font-weight: 600;
       margin-right: 8px;
     }
     .offer-discount {
@@ -68,16 +67,16 @@
       margin-right: 8px;
     }
     .offer-price {
-      font-size: 18px;
-      font-weight: 600;
+      font-size: 16px;
+      font-weight: 500;
       color: #222;
       margin-top: 2px;
     }
     .offer-old-price {
-      font-size: 13px;
+      font-size: 11px;
       color: #bbb;
       text-decoration: line-through;
-      margin-left: 8px;
+      
       font-weight: 400;
     }
     .offer-desc {
@@ -172,3 +171,5 @@
         padding: 10px 2vw;
       }
     }
+
+  

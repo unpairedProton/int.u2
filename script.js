@@ -1,4 +1,4 @@
- // JS for offer selection and total price update
+// JS for offer selection and total price update
     const offerBoxes = document.querySelectorAll('.offer-box');
     const radios = document.querySelectorAll('.offer-radio');
     const totalPrice = document.getElementById('total-price');
@@ -9,10 +9,27 @@
       '$24.00 USD'
     ];
 
-    radios.forEach((radio, idx) => {
-      radio.addEventListener('change', () => {
-        offerBoxes.forEach(box => box.classList.remove('selected'));
-        offerBoxes[idx].classList.add('selected');
-        totalPrice.textContent = priceTexts[idx];
+    // Function to handle variant selectors visibility
+    function updateVariantSelectors(selectedIndex) {
+      offerBoxes.forEach((box, idx) => {
+        const variantSelector = box.querySelector('.variant-selectors');
+        if (idx === selectedIndex) {
+          variantSelector.style.display = 'block';
+        } else {
+          variantSelector.style.display = 'none';
+        }
+      });
+    }
+
+    // Initialize with first offer selected and its variant selectors visible
+    updateVariantSelectors(0);
+
+    offerBoxes.forEach((box, i) => {
+      box.addEventListener('click', () => {
+        radios[i].checked = true;
+        offerBoxes.forEach(b => b.classList.remove('selected'));
+        box.classList.add('selected');
+        totalPrice.textContent = priceTexts[i];
+        updateVariantSelectors(i);
       });
     });
