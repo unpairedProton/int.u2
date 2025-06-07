@@ -9,8 +9,10 @@
 </head>
 
 <body>
-    <div class="bogo-container">
-        <div class="bogo-title-section">
+
+    <!-- Main Container -->
+    <section class="bogo-container">
+        <header class="bogo-title-section">
             <div class="line">
                 <hr>
             </div>
@@ -18,14 +20,18 @@
             <div class="line">
                 <hr>
             </div>
-        </div>
-        <div class="offer-box selected" data-index="0">
+        </header>
+
+
+        <section class="offer-box selected" data-index="0">
             <input type="radio" class="offer-radio" name="offer" id="offer1" checked>
-            <div class="offer-details">
+            <section class="offer-details">
                 <div class="offer-header">
                     <span class="offer-units">1 Unit</span>
                     <span class="offer-discount">10% Off</span>
                 </div>
+
+                <!-- Option Section for Size and Color -->
                 <div class="variant-selectors">
                     <div class="empty"></div>
                     <div class="size">Size</div>
@@ -57,20 +63,20 @@
                     </select>
                 </div>
                 <div class="offer-desc">Standard Price</div>
-
-            </div>
+            </section>
             <div class="offer-price">$10.00 USD <div class="offer-old-price">$24.00 USD</div>
             </div>
+        </section>
 
-        </div>
-
-        <div class="offer-box" data-index="1">
+        <section class="offer-box" data-index="1">
             <input type="radio" class="offer-radio" name="offer" id="offer2">
-            <div class="offer-details">
+            <section class="offer-details">
                 <div class="offer-header">
                     <span class="offer-units">2 Unit</span>
                     <span class="offer-discount">20% Off</span>
                 </div>
+
+                <!-- Option Section for Size and Color -->
                 <div class="variant-selectors">
                     <div class="empty"></div>
                     <div class="size">Size</div>
@@ -102,18 +108,20 @@
                     </select>
                 </div>
                 <div class="offer-desc">Premium Price</div>
-            </div>
+            </section>
             <div class="offer-price">$18.00 USD <div class="offer-old-price">$24.00 USD</div>
             </div>
             <div class="most-popular">MOST POPULAR</div>
-        </div>
-        <div class="offer-box" data-index="2">
+        </section>
+        <section class="offer-box" data-index="2">
             <input type="radio" class="offer-radio" name="offer" id="offer3">
-            <div class="offer-details">
+            <section class="offer-details">
                 <div class="offer-header">
                     <span class="offer-units">3 Unit</span>
                     <span class="offer-discount">30% Off</span>
                 </div>
+
+                <!-- Option Section for Size and Color -->
                 <div class="variant-selectors">
                     <div class="empty"></div>
                     <div class="size">Size</div>
@@ -145,10 +153,10 @@
                     </select>
                 </div>
                 <div class="offer-desc">Platinum Price</div>
-            </div>
+            </section>
             <div class="offer-price">$24.00 USD <div class="offer-old-price">$24.00 USD</div>
             </div>
-        </div>
+        </section>
         <div class="total-row-section" >
             <div class="free-delivery">Free Delivery</div>
             <div class="total-row">Total : $10.00 USD</div>
@@ -156,7 +164,7 @@
 
         <button class="add-to-cart-btn"><span style="font-size:20px;">+</span> Add to Cart</button>
         <div class="powered-by">@ Powered by Pumper</div>
-    </div>
+    </section>
 </body>
 <script src="script.js"></script>
 

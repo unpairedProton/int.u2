@@ -1,3 +1,4 @@
+
 :root {
   --line: rgb(184, 183, 183)
 }
@@ -8,9 +9,15 @@ body {
   background: #fff;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 100vh;
 }
 
@@ -19,15 +26,21 @@ body {
   width: 380px;
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
   padding: 24px 18px 18px 18px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
 }
 
 .bogo-title {
 
-  flex: 1;
+  -webkit-box-flex: 1;
+
+      -ms-flex: 1;
+
+          flex: 1;
   text-wrap: nowrap;
 
   text-align: center;
@@ -43,8 +56,12 @@ body {
 
   padding: 16px 14px;
   margin-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   position: relative;
   background: #fff;
 
@@ -63,12 +80,18 @@ body {
 }
 
 .offer-details {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .offer-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 4px;
 }
 
@@ -131,9 +154,13 @@ body {
 
 .variant-selectors {
   margin-top: 10px;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 20px 7px 64px 7px 64px;
   grid-template-columns: 20px repeat(2, 64px);
-  align-items: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   gap: 7px;
 }
 
@@ -141,27 +168,22 @@ body {
 
 label{
   font-size: 11px;
-  justify-self: end;
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 
 select {
   border: 1px solid #dbcece;
   outline: none;
   padding: 3px;
-  /* Remove default focus outline */
-
-  /* --- Key to removing default arrow and adding custom one --- */
   -webkit-appearance: none;
-  /* For Chrome, Safari, etc. */
   -moz-appearance: none;
-  /* For Firefox */
   appearance: none;
-  /* Standard property */
-/* Custom arrow using a background image (SVG is highly recommended) */
+  
             background-image: url("data:image/svg+xml;utf8,<svg fill='%23333333' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
             background-repeat: no-repeat;
-            background-position: right 8px center; /* Position the arrow */
-            background-size: 16px; /* Size of the arrow */
+            background-position: right 8px center; 
+            background-size: 16px;
 }
 
 .free-delivery {
@@ -172,9 +194,15 @@ select {
 }
 
 .total-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 16px;
   font-weight: 500;
   
@@ -182,10 +210,16 @@ select {
 }
 
 .total-row-section{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 16px;
 }
 
@@ -200,10 +234,18 @@ select {
   padding: 13px 0;
   margin-top: 8px;
   cursor: pointer;
+  -webkit-transition: background 0.2s;
+  -o-transition: background 0.2s;
   transition: background 0.2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 10px;
 }
 
@@ -240,15 +282,26 @@ select {
 }
 
 .bogo-title-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 7px;
 }
 
 .line {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 hr {
