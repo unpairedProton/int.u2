@@ -11,9 +11,9 @@
 
     // Function to handle variant selectors visibility
     function updateVariantSelectors(selectedIndex) {
-      offerBoxes.forEach((box, idx) => {
+      offerBoxes.forEach((box, i) => {
         const variantSelector = box.querySelector('.variant-selectors');
-        if (idx === selectedIndex) {
+        if (i === selectedIndex) {
           variantSelector.style.display = 'grid';
         } else {
           variantSelector.style.display = 'none';
