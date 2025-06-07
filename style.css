@@ -10,6 +10,7 @@
     }
     .bogo-container {
       width: 380px;
+      width: 380px;
       background: #fff;
       border-radius: 8px;
       box-shadow: 0 2px 12px rgba(0,0,0,0.07);
@@ -27,12 +28,14 @@
     }
     .offer-box {
       border: 1.5px solid rgb(184, 183, 183);
+      border: 1.5px solid rgb(184, 183, 183);
       padding: 16px 14px;
       margin-bottom: 16px;
       display: flex;
       align-items: flex-start;
       position: relative;
       background: #fff;
+
 
     }
     .offer-box.selected {
@@ -55,6 +58,8 @@
     .offer-units {
       font-size: 16px;
       font-weight: 600;
+      font-size: 16px;
+      font-weight: 600;
       margin-right: 8px;
     }
     .offer-discount {
@@ -69,13 +74,17 @@
     .offer-price {
       font-size: 16px;
       font-weight: 500;
+      font-size: 16px;
+      font-weight: 500;
       color: #222;
       margin-top: 2px;
     }
     .offer-old-price {
       font-size: 11px;
+      font-size: 11px;
       color: #bbb;
       text-decoration: line-through;
+      
       
       font-weight: 400;
     }
