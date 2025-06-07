@@ -1,8 +1,7 @@
-// JS for offer selection and total price update
+
     const offerBoxes = document.querySelectorAll('.offer-box');
     const radios = document.querySelectorAll('.offer-radio');
     const totalPrice = document.querySelector('.total-row');
-    const prices = [10, 18, 24];
     const priceTexts = [
       'Total : $10.00 USD',
       'Total : $18.00 USD',
