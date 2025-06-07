@@ -1,184 +1,256 @@
- body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: #fff;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
-    .bogo-container {
-      width: 380px;
-      width: 380px;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-      padding: 24px 18px 18px 18px;
-      box-sizing: border-box;
-      position: relative;
-    }
-    .bogo-title {
-      text-align: center;
-      color: #ff7ca8;
-      font-size: 22px;
-      font-weight: 600;
-      margin-bottom: 18px;
-      letter-spacing: 0.5px;
-    }
-    .offer-box {
-      border: 1.5px solid rgb(184, 183, 183);
-      border: 1.5px solid rgb(184, 183, 183);
-      padding: 16px 14px;
-      margin-bottom: 16px;
-      display: flex;
-      align-items: flex-start;
-      position: relative;
-      background: #fff;
+:root {
+  --line: rgb(184, 183, 183)
+}
 
 
-    }
-    .offer-box.selected {
-      border: 2px solid #ff7ca8;
-      background: #fff6fa;
-    }
-    .offer-radio {
-      margin-right: 12px;
-      margin-top: 2px;
-      accent-color: #ff7ca8;
-    }
-    .offer-details {
-      flex: 1;
-    }
-    .offer-header {
-      display: flex;
-      align-items: center;
-      margin-bottom: 4px;
-    }
-    .offer-units {
-      font-size: 16px;
-      font-weight: 600;
-      font-size: 16px;
-      font-weight: 600;
-      margin-right: 8px;
-    }
-    .offer-discount {
-      background: #ff7ca8;
-      color: #fff;
-      font-size: 12px;
-      font-weight: 600;
-      border-radius: 4px;
-      padding: 2px 7px;
-      margin-right: 8px;
-    }
-    .offer-price {
-      font-size: 16px;
-      font-weight: 500;
-      font-size: 16px;
-      font-weight: 500;
-      color: #222;
-      margin-top: 2px;
-    }
-    .offer-old-price {
-      font-size: 11px;
-      font-size: 11px;
-      color: #bbb;
-      text-decoration: line-through;
-      
-      
-      font-weight: 400;
-    }
-    .offer-desc {
-      font-size: 13px;
-      color: #888;
-      margin-bottom: 2px;
-    }
-    .most-popular {
-      position: absolute;
-      top: -16px;
-      right: 12px;
-      background: #ff7ca8;
-      color: #fff;
-      font-size: 12px;
-      font-weight: 700;
-      border-radius: 6px 6px 0 0;
-      padding: 3px 14px 3px 14px;
-      letter-spacing: 0.5px;
-      z-index: 2;
-    }
-    .variant-selectors {
-      margin-top: 10px;
-      display: flex;
-      flex-direction: column;
-      gap: 7px;
-    }
-    .variant-row {
-      display: flex;
-      gap: 10px;
-      align-items: center;
-    }
-    .variant-row label {
-      font-size: 13px;
-      color: #888;
-      margin-right: 4px;
-      min-width: 18px;
-    }
-    .variant-row select {
-      padding: 3px 8px;
-      border-radius: 4px;
-      border: 1px solid #ddd;
-      font-size: 13px;
-      background: #fff;
-      color: #333;
-    }
-    .free-delivery {
-      color: #ff7ca8;
-      font-size: 15px;
-      font-weight: 500;
-      margin-top: 8px;
-      margin-bottom: 2px;
-    }
-    .total-row {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      font-size: 16px;
-      font-weight: 500;
-      margin-bottom: 16px;
-      color: #222;
-    }
-    .add-to-cart-btn {
-      width: 100%;
-      background: #ff7ca8;
-      color: #fff;
-      font-size: 18px;
-      font-weight: 600;
-      border: none;
-      border-radius: 6px;
-      padding: 13px 0;
-      margin-top: 8px;
-      cursor: pointer;
-      transition: background 0.2s;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
-    .add-to-cart-btn:hover {
-      background: #ff5c9e;
-    }
-    .powered-by {
-      text-align: right;
-      color: #bbb;
-      font-size: 12px;
-      margin-top: 10px;
-      font-style: italic;
-    }
-    @media (max-width: 400px) {
-      .bogo-container {
-        width: 98vw;
-        padding: 10px 2vw;
-      }
-    }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
+.bogo-container {
+  width: 380px;
+  width: 380px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  padding: 24px 18px 18px 18px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.bogo-title {
+
+  flex: 1;
+  text-wrap: nowrap;
+
+  text-align: center;
+  color: #ff7ca8;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+}
+
+.offer-box {
+  border: 1.5px solid var(--line);
+
+  padding: 16px 14px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  background: #fff;
+
+
+}
+
+.offer-box.selected {
+  border: 2px solid #ff7ca8;
+  background: #fff6fa;
+}
+
+.offer-radio {
+  margin-right: 12px;
+  margin-top: 2px;
+  accent-color: #ff7ca8;
+}
+
+.offer-details {
+  flex: 1;
+}
+
+.offer-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.offer-units {
+  font-size: 16px;
+  font-weight: 600;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.offer-discount {
+  background: #ff7ca8;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 2px 7px;
+  margin-right: 8px;
+}
+
+.offer-price {
+  font-size: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+  margin-top: 2px;
+}
+
+.offer-old-price {
+  font-size: 11px;
+  font-size: 11px;
+  color: #bbb;
+  text-decoration: line-through;
+
+
+  font-weight: 400;
+}
+
+.offer-desc {
+  font-size: 13px;
+  /* color: #888; */
+  margin-top: 8px;
+}
+
+.most-popular {
+  position: absolute;
+  top: -16px;
+  right: 12px;
+  background: #ff7ca8;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 6px 6px 0 0;
+  padding: 3px 14px 3px 14px;
+  letter-spacing: 0.5px;
+  z-index: 2;
+}
+
+.variant-selectors {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 20px repeat(2, 64px);
+  align-items: end;
+  gap: 7px;
+}
+
+
+
+label{
+  font-size: 11px;
+  justify-self: end;
+}
+
+select {
+  border: 1px solid #dbcece;
+  outline: none;
+  padding: 3px;
+  /* Remove default focus outline */
+
+  /* --- Key to removing default arrow and adding custom one --- */
+  -webkit-appearance: none;
+  /* For Chrome, Safari, etc. */
+  -moz-appearance: none;
+  /* For Firefox */
+  appearance: none;
+  /* Standard property */
+/* Custom arrow using a background image (SVG is highly recommended) */
+            background-image: url("data:image/svg+xml;utf8,<svg fill='%23333333' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+            background-repeat: no-repeat;
+            background-position: right 8px center; /* Position the arrow */
+            background-size: 16px; /* Size of the arrow */
+}
+
+.free-delivery {
+  color: #ff7ca8;
+  font-size: 15px;
+  font-weight: 500;
+ 
+}
+
+.total-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
   
+  color: #222;
+}
+
+.total-row-section{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.add-to-cart-btn {
+  width: 100%;
+  background: #ff7ca8;
+  color: #fff;
+  font-size: 14px;
+  
+  border: none;
+  border-radius: 6px;
+  padding: 13px 0;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.add-to-cart-btn span{
+  font-size: 2px;
+}
+
+.size {
+  font-size: 12px;
+
+}
+
+.color {
+  font-size: 12px;
+}
+
+.add-to-cart-btn:hover {
+  background: #ff5c9e;
+}
+
+.powered-by {
+  text-align: right;
+  color: #bbb;
+  font-size: 12px;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+@media (max-width: 400px) {
+  .bogo-container {
+    width: 98vw;
+    padding: 10px 2vw;
+  }
+}
+
+.bogo-title-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.line {
+  flex: 1;
+}
+
+hr {
+  color: var(--line);
+}

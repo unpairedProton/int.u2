@@ -1,12 +1,12 @@
 // JS for offer selection and total price update
     const offerBoxes = document.querySelectorAll('.offer-box');
     const radios = document.querySelectorAll('.offer-radio');
-    const totalPrice = document.getElementById('total-price');
+    const totalPrice = document.querySelector('.total-row');
     const prices = [10, 18, 24];
     const priceTexts = [
-      '$10.00 USD',
-      '$18.00 USD',
-      '$24.00 USD'
+      'Total : $10.00 USD',
+      'Total : $18.00 USD',
+      'Total : $24.00 USD'
     ];
 
     // Function to handle variant selectors visibility
@@ -14,7 +14,7 @@
       offerBoxes.forEach((box, idx) => {
         const variantSelector = box.querySelector('.variant-selectors');
         if (idx === selectedIndex) {
-          variantSelector.style.display = 'block';
+          variantSelector.style.display = 'grid';
         } else {
           variantSelector.style.display = 'none';
         }
