@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boto Choose Plan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bogo-container">
+    <div class="bogo-title">YAY! It's BOGO</div>
+    <div class="offer-box selected" data-index="0">
+      <input type="radio" class="offer-radio" name="offer" id="offer1" checked>
+      <div class="offer-details">
+        <div class="offer-header">
+          <span class="offer-units">1 Unit</span>
+          <span class="offer-discount">10% Off</span>
+        </div>
+        <div class="offer-desc">Standard Price</div>
+        <div class="offer-price">$10.00 USD <span class="offer-old-price">$24.00 USD</span></div>
+      </div>
+    </div>
+    <div class="offer-box" data-index="1">
+      <input type="radio" class="offer-radio" name="offer" id="offer2">
+      <div class="offer-details">
+        <div class="offer-header">
+          <span class="offer-units">2 Unit</span>
+          <span class="offer-discount">20% Off</span>
+        </div>
+        <div class="variant-selectors">
+          <div class="variant-row">
+            <label>#1</label>
+            <select class="size-select">
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+            </select>
+            <select class="color-select">
+              <option>Black</option>
+              <option>White</option>
+              <option>Red</option>
+              <option>Blue</option>
+              <option>Colour</option>
+            </select>
+          </div>
+          <div class="variant-row">
+            <label>#2</label>
+            <select class="size-select">
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+            </select>
+            <select class="color-select">
+              <option>Colour</option>
+              <option>Black</option>
+              <option>White</option>
+              <option>Red</option>
+              <option>Blue</option>
+            </select>
+          </div>
+        </div>
+        <div class="offer-price">$18.00 USD <span class="offer-old-price">$24.00 USD</span></div>
+      </div>
+      <div class="most-popular">MOST POPULAR</div>
+    </div>
+    <div class="offer-box" data-index="2">
+      <input type="radio" class="offer-radio" name="offer" id="offer3">
+      <div class="offer-details">
+        <div class="offer-header">
+          <span class="offer-units">3 Unit</span>
+          <span class="offer-discount">30% Off</span>
+        </div>
+        <div class="offer-price">$24.00 USD <span class="offer-old-price">$24.00 USD</span></div>
+      </div>
+    </div>
+    <div class="free-delivery">Free Delivery</div>
+    <div class="total-row">Total : <span id="total-price">$10.00 USD</span></div>
+    <button class="add-to-cart-btn"><span style="font-size:20px;">+</span> Add to Cart</button>
+    <div class="powered-by">@ Powered by Pumper</div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
